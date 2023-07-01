@@ -35,5 +35,4 @@ public class StudentController extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("studentslist.jsp");
 		rd.forward(request, response);
 	}
-	
 }
