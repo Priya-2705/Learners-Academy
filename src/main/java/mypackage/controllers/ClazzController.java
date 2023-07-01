@@ -33,5 +33,4 @@ public class ClazzController extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("clazzlist.jsp");
 		rd.forward(request, response);
 	}
-
 }
