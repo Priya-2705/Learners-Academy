@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+.heading {
+  text-align:center;
+  color:#01257D;
+  margin-top: 25px;
+  margin-bottom:25px;
+  font-size: 24px;
+}
+
+.column-3 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  margin:20px;
+  height: 150px;
+}
+
+.tiles{
+	padding-left: 150px;
+}
+
+.option-1 {
+  background-color: #01257D;
+}
+.option-2 {
+  background-color: #01257D;
+}
+.option-3 {
+  background-color: #01257D;
+}
+.option-4 {
+  background-color: #01257D;
+}
+.option-5 {
+  background-image: url('laptop-open-book-assortment.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.option-6 {
+  background-color: #01257D;
+}
+
+.option-text {
+  text-align:center;
+  font-size:30px;
+  color: white;
+}
+
+.option-1:hover {
+  background-color:#98c1d9;
+}
+.option-2:hover {
+   background-color: #98c1d9;
+}
+.option-3:hover {
+  background-color:#98c1d9;
+}
+.option-4:hover {
+   background-color: #98c1d9;
+}
+.option-6:hover {
+   background-color: #98c1d9;
+}
