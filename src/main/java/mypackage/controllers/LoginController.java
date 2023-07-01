@@ -27,6 +27,7 @@ public class LoginController extends HttpServlet {
 		LoginModel loginModel = new LoginModel();
 		loginModel.setUsername(username);
 		loginModel.setPassword(password);
+		
 		Admin admin = adminService.getAdmin(loginModel);
 		if(admin != null) {
 			HttpSession session = request.getSession();

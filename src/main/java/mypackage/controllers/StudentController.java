@@ -31,6 +31,7 @@ public class StudentController extends HttpServlet {
 		HttpSession session = request.getSession();
 		Admin admin = (Admin) session.getAttribute("admin");
 		studentService.addStudent(admin, studentModel);
+		
 		RequestDispatcher rd = request.getRequestDispatcher("studentslist.jsp");
 		rd.forward(request, response);
 	}
