@@ -24,10 +24,12 @@ public class ClazzController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 		String clazzName = request.getParameter("clazzname");
+		
 		ClazzModel clazzModel = new ClazzModel(clazzName);
 		HttpSession session = request.getSession();
 		Admin admin = (Admin) session.getAttribute("admin");
 		clazzService.addClazz(admin, clazzModel);
+		
 		RequestDispatcher rd = request.getRequestDispatcher("clazzlist.jsp");
 		rd.forward(request, response);
 	}
